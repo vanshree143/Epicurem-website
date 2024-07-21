@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================shopHomePAge============] */
+
+/* ===============shop===================== */
+.shopArea{
+    padding: 120px 0;
+}
+
+.shopCatagory select{
+    border: 1px solid #ECF0F5;
+    border-radius: 8px;
+    height: 44px;
+    outline: none !important;
+    transition: all .15s ease-in-out; 
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+.shopCatagory select option{
+    padding: 10px 0;
+    /* background-color: azure; */
+}
+.shopCatagory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebarWrap .sidebarItem{
+    background: var(--color-white);
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 25px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+.shopCatagorySelect select{
+    width: 100% !important;
+    border: 1px solid #ECF0F5;
+    border-radius: 8px;
+    height: 44px;
+    outline: none !important;
+    transition: all .15s ease-in-out; 
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+.shopCatagorySelect{
+    gap: 24px;
+}
+.uiWidget{
+    border: 1px solid #aaaaaa;
+    background: #ffffff  50% 50% repeat-x;
+    color: #222222;
+    
+}
+#slider{
+    margin: 50px;
+    height: 16px;
+    border-radius: 5px;
+}
+input[type="range"]{
+   accent-color: orange;
+   position: absolute;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   
+}
+/* =============shopDetailArea============== */
+.shopDetailsArea{
+    padding: 120px 0;
+}
+.shopMainImg{
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+.shopMainImg a i{
+    color: orange;
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    font-size: 25px;
+    background-color: #F1F4F5;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px 0;
+}
+.shopSlideImg:hover::before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    content: "";
+    border: 2px solid orange;
+}
+.shopInfoWrap{
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+.reviewNumber .rating span i{
+    font-size: 13px;
+}
+.reviewNumber{
+    display: flex;
+    gap: 9px;
+    margin: 9px 0 10px;
+}
+.shopInfoWrap .stock b::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color:orange;
+    content: "";
+}
+.stock b{
+    position: relative;
+    padding-left: 15px;
+}    
+.stock span{
+    font-size: 14px;
+    padding:10px 15px;
+    border-radius: 6px;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color:black;
+    margin-left: 10px;
+}
+.sizeWrap .sizeGroup input[type="radio"]{
+    display: none;
+}
+.sizeBox span{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color:#101113;
+}
+.sizeBox{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+.sizeWrap .sizeGroup input[type="radio"]:checked ~ .sizeBox span{
+    border: 1px solid orange;
+}
+.sizeGroup{
+    display: flex;
+    gap: 20px;
+}
+.shopInfoWrap .numberInput{
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.shopInfoWrap .commonBtn button span i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.wishList li i{
+    font-size: 20px;   
+}
+.wishList li{
+    display: flex;
+    gap: 10px;
+}
+.wishList{
+    gap: 23px;
+    padding-bottom: 14px !important;
+    border-bottom: 1px solid #E8E8E8;
+}
+@media screen and (max-width:992px){
+  .sizeWrap .sizeGroup{
+    gap: 12px;
+   }
+   .shopSlideImg{
+     margin: 10px 0;
+   }
+  }
+@media screen and (max-width:280px){
+  .stock span{
+    font-size: 12px;
+  }
+  }
+
+/* ===================shopInfoArea================= */
+
+.shopInfoArea{
+    padding-bottom: 120px;
+}
+.shopInfoTabs{
+    gap: 100px;
+    border-bottom: 1px solid rgba(16, 17, 19, 0.1);
+    display: flex;
+}
+
+.shopInfoTabs .navLink.active::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color:black;
+    content: "";
+}
+.navLink{
+    background: unset;
+    border: none;
+    font-family:'abril_display';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 16px;
+}
+.shopInfoCta li span{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.shopInfoCta{
+    border-top: 1px solid rgba(16, 17, 19, 0.1);
+    gap: 35px;
+}
+
+/* =========shopdetailscoffee=============== */
+.option-info-title{
+    border-bottom: 1px solid rgba(253, 153, 0, 0.1);
+    padding-bottom: 5px;
+}
+.shopCatagorySelect.coffee{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;    
+}
+@media screen and (max-width:768px){
+    .shopCatagorySelect.coffee{
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;    
+    }
+}
+
+/* ===============shopcartpage================ */
+/* ============shopformarea============= */
+.shopFromWrap{
+    padding-top: 120px;
+}
+.shopFormBox li.active span{
+    background-color: orange;
+}
+.shopFormBox li span{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid orange;
+    background-color: #fff;
+}
+.shopFormBox li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    position: relative;
+    width: 100%;
+}
+.shopFormBox li:not(:first-child)::before{
+    position: absolute;
+    left: -50%;
+    top: 12px;
+    border: 1px dotted rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 1px;
+    content: "";
+    z-index: -1;
+}
+.cartProDetails{
+    padding-top: 35px;
+    border-top: 1px solid #F5F5F5;
+}
+.cartProDetails thead{
+    border: 1px solid #F5F5F5;
+    text-align: center;
+}
+.cartProDetails th{
+    font-weight: 500;
+    font-size: 18px;
+    background: #F5F5F5;
+    position: relative;
+    padding: 15px 10px;
+}
+.cartProDetails th:first-child{
+    text-align: left;
+}
+.cartProDetails td{
+    padding: 15px 10px;
+    border-right: 1px solid #F4F4F4;
+    text-align: center;
+}
+.singleCartImg{
+    display:flex ;
+    align-items: center;
+    gap: 24px;
+}
+.cartProDetails table{
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+.cartXicon i{
+    font-size: 24px;
+}
+.cartProDetails table .numberInput{
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: auto;
+}
+.cartFormWrap textarea{
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 20px;
+}
+.cartFormWrap input{
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 20px;
+}
+.commonBtn.styleborder button{
+    color: #FD9900;
+    border: 1px solid #FD9900;
+    background: transparent;
+}
+
+/* =============checkout=================== */
+.shopFromWrap{
+    padding-bottom: 120px;
+}
+.checkoutFormWrap .input{
+    border-radius: 6px;
+    width: 100%;
+    margin: 12px 0;
+}
+.checkoutFormWrap .selecet1 select{
+    width: 100%;
+    border: 1px solid #EFEFEF;
+    border-radius: 6px;
+    padding: 13px 15px;
+}
+.checkoutInfoWrap{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 24px;
+}
+.checkoutShopInfo p{
+    max-width: 180px;
+    width: 100%;
+    margin-top: 8px;
+}
+.dotCheck{
+    max-width: 80px;
+    width: 100%;
+    border-top: 1px dotted #ddd;
+    margin: 0 20px;
+}
+.singleCheckout{
+    gap: 24px;
+}
+.checkoutShopInfo h5{
+    color: #101113;
+    font-size: 18px;
+    font-weight: 600;
+}
+.couponWrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.checkoutList{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.checkoutList li{
+    display: flex;
+    justify-content: space-between;
+    color: #101113;
+    font-weight: 600;
+}
